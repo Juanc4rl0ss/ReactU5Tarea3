@@ -7,7 +7,8 @@ import './index.css'
 
 //Renderizamos React,para que el id root sea el punto de partida
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  //Si quito el StrinctMode me funciona bien sin useEffect
+  // <React.StrictMode>
     <Titulo />
-  </React.StrictMode>,
+  // </React.StrictMode>,
 )

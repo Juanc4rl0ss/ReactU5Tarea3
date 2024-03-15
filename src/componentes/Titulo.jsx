@@ -8,9 +8,9 @@ function Titulo() {
     // Utilizo useState para mantener el índice de la imagen que está actualmente activa en el carrusel. Lo inicio en 0, es decir, con la primera imagen del array.
   const [indiceActivo, setIndiceActivo] = useState(0);
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    // Configuramos el temporizador dentro de useEffect para que cambie cada dos segundos
+  //   // Configuramos el temporizador dentro de useEffect para que cambie cada dos segundos
 
     const temporizador = setTimeout(() => {
 
@@ -21,9 +21,9 @@ function Titulo() {
       });
     }, 2000); 
 
-    //Ésta funcion de limpieza, limpia el temporizador,para evitar solapaciones de estados anteriores
-    return () => clearTimeout(temporizador);
-  }, [indiceActivo]);
+  //   //Ésta funcion de limpieza, limpia el temporizador,para evitar solapaciones de estados anteriores
+  //   return () => clearTimeout(temporizador);
+  // }, [indiceActivo]);
 
   return (
     
